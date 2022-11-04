@@ -1,13 +1,18 @@
 import numpy
 import pandas as pd
-import numpy as np
 
 if __name__ == '__main__':
-    data = pd.read_csv("dane/Zadanie_2.csv")
+    data = pd.read_csv("dane/Zadanie_2.csv", delimiter=";", header=None)
     print(data)
-    # print(type(data))
-    a, eig = numpy.linalg.eig(data)
+    eigenvalues, eigenvectors = numpy.linalg.eig(data)
 
-    # flipped = numpy.flip(data)
-    # print(flipped)
+    print("Eigenvalues:")
+    print(eigenvalues)
+
+    print("Eigenvectors:")
+    print(eigenvectors)
+
+    flipped = numpy.flip(data.values)
+    print("Flipped:")
+    print(flipped)
 
