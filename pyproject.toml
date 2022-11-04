@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pad"
+version = "0.1.0"
+description = ""
+authors = ["Piotr Rudnik <piotr.rudnik@tfi.team>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.1"
+seaborn = "^0.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
